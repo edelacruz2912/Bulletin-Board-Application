@@ -1,0 +1,23 @@
+{
+  "name": "bulletin-board-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edelacruz2912/Bulletin-Board-Application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edelacruz2912/Bulletin-Board-Application/issues"
+  },
+  "homepage": "https://github.com/edelacruz2912/Bulletin-Board-Application#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
