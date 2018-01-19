@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My todolist</title>
+        <style type="text/css">
+            html
+            {
+                height: 100%;
+            }
+
+
+            body
+            {
+                height: 100%;
+                margin: 0em;
+            }
+
+            h1{
+                text-align: center;
+                margin-top: 0em;
+            }
+
+            input,label
+            {
+                width: 23em;
+
+            }
+
+            p{
+                 border-style: solid; 
+                 text-align: center;
+                 /*width: 50%;*/
+            }
+
+            #submit
+            {
+                display: block;
+                margin-left: 42%;
+            }
+
+            #formContainer
+            {
+                position:relative;
+                margin: 0 auto;
+                width: 50%;
+            }
+
+           
+
+            
+        </style>
+
+        
+    </head>
+
+    <body>
+
+
+         <h1>Cookie Forum</h1>
+
+        <div id = "formContainer">  	
+       
+
+        <form action="/post/add/" method="post">
+            <p>
+                <label for="username">UserName:</label>
+                <input type="text" name="username"autofocus id = "userId"/>
+                <br>
+
+                <label for="title">Tittle</label>
+                <input type="text" name="titleId" autofocus id = "titleId"/>
+                <br>
+
+                <label for="msg">Msg</label>
+                <input type="text" name="msg"  autofocus id = "msgId" />
+
+                <input id= "submit"type="submit" />
+            </p>
+        </form>
+       
+
+        <% jsonData.forEach(function(post) { %>
+           
+            <div id = "messageContainer"> 
+                <h2 id = "msgTitle">  <%= post.title %></h2>
+
+                <textarea rows="4" cols="50" readonly>
+                 <%= post.msg %>
+                </textarea>
+
+                <h5>  <%= post.username %></h5>
+            </div>
+
+
+        <% }); %>
+        
+
+
+         </div>
+     
+
+
+
+
+
+
+    </body>
+</html>
